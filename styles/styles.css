@@ -1,7 +1,7 @@
 :root {
     --heading-background-color: darkblue;
     --heading-text-color: white;
-    --aside-bg: #pink;
+    --aside-bg: #ffcocb;
     --aside-text: #333;
     --border-color: #000;
     --shadow-color: gray;
@@ -14,7 +14,7 @@
 }
 
 nav {
-    background-color: var(--heading-backgound-color);
+    background-color: var(--heading-background-color);
     padding: var(--nav-padding);
 }
 
