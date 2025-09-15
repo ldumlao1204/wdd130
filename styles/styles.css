@@ -14,12 +14,12 @@
 }
 
 nav {
-    background-color: var(--heading-background-color);
+    background-color: var(--heading-backgound-color);
     padding: var(--nav-padding);
 }
 
 nav a {
-    color: var(--heading-background-color);
+    color: var(--heading-text-color);
     display: block;
     padding: var(--nav-link-padding);
 }
