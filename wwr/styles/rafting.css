@@ -3,7 +3,7 @@
     --secondary-color: #080e01; /*black*/
     --accent1-color: #13205c; /* darkblue */
     --accent2-color: #ffe700; /* gold */
-    --heading-font: "Classic Sans Serif", sans-serif;
+    --heading-font: "Roboto", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -60,7 +60,6 @@ h1 {
     padding: 12px;
     border-radius: 0px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    max-width: 350px;
     z-index: 2;
     max-width: none;
 }
