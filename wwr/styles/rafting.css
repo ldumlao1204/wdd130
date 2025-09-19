@@ -54,7 +54,7 @@ h1 {
     position: absolute;
     top: 280px;      /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
-    background: rgba(255,255,255,0.85); /* Soft white background for readability */
+    background: var(--accent1-color); /* Soft white background for readability */
     padding: 12px;
     border-radius: 0px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
@@ -62,8 +62,6 @@ h1 {
     z-index: 2;
     max-width: none;
 }
-
-
 
 .hero img {
     display: block;
