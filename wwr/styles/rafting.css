@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #faf8f8; /* white */
-    --secondary-color: #01140b; /*black*/
-    --accent1-color: #030450; /* darkblue */
+    --primary-color: #ffffff; /* white */
+    --secondary-color: #080e01; /*black*/
+    --accent1-color: #13205c; /* darkblue */
     --accent2-color: #ffe700; /* gold */
     --heading-font: "Classic Sans Serif", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -55,6 +55,8 @@ h1 {
     top: 280px;      /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
     background: var(--accent1-color); /* Soft white background for readability */
+    color: var(--primary-color);
+    opacity: 0.7;
     padding: 12px;
     border-radius: 0px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
