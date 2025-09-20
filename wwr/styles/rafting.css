@@ -1,8 +1,8 @@
 :root {
     --primary-color: #ffffff; /* white */
     --secondary-color: #080e01; /*black*/
-    --accent1-color: #13205c; /* darkblue */
-    --accent2-color: #ffe700; /* gold */
+    --accent1-color: #0c107e; /* darkblue */
+    --accent2-color: #bea307; /* gold */
     --heading-font: "Roboto", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 header, main, footer {
@@ -23,12 +23,17 @@ header, main, footer {
     margin: 0 auto;
 }
 
+
+main {
+    max-width: 840px;
+}
+    
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
-    padding: 12px;
-    background-color: var(--accent1-color);   
+    padding: 8px;
+    background-color: var(--accent2-color);   
 }
 
 nav, p, section, article {
@@ -40,6 +45,12 @@ nav, p, section, article {
     position: relative;
 }
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -48,26 +59,20 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text - make sure there is enough contrast with the background-color */
+    color: #ffffff; /* white text - make sure there is enough contrast with the background-color */
 }
 .hero article {
     position: absolute;
-    top: 280px;      /* Adjust vertical position as needed */
+    top: 275px;      /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
     background: var(--accent1-color); /* Soft white background for readability */
     color: var(--primary-color);
     opacity: 0.7;
-    padding: 12px;
+    padding: 10px;
     border-radius: 0px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
     z-index: 2;
     max-width: none;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .hero article img {
@@ -78,3 +83,5 @@ h1 {
 .socialmedia a {
     text-decoration: none;
 }
+
+
