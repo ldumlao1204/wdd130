@@ -80,7 +80,6 @@ nav, p, section, article {
     width: 100%;
     height: auto;
     padding: .5px;
-   
 }
 
 h1 {
@@ -92,11 +91,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #ffffff; /* white text - make sure there is enough contrast with the background-color */
-}
-
-.history-section {
-  text-align: center;
-  
 }
 
 .history-section h2 {
