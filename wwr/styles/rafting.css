@@ -14,7 +14,7 @@
 }
 
 a {
-    color: var(--accent2-color)
+    color: var(--primary-color)
 }
 
 body {
@@ -34,7 +34,7 @@ header {
     grid-gap: 30px;
     align-items: center;
     justify-content: start;
-    padding: 20px;
+    padding: 1px;
     }
 
 nav ul {

@@ -32,7 +32,7 @@ nav {
     align-items: center;
 }
 
-a hover {
+a:hover {
     background-color:#7a8a9f; 
 }
 
