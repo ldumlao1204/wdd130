@@ -64,7 +64,6 @@ main {
     margin: auto;
     width: 95%;
     grid-column: 2;
-   
 }
 
 main img{
@@ -120,6 +119,10 @@ footer {
     margin-top: 15px;
     border-top: 1px var(--border-color);
     text-align: center;
+    background-color: var(--heading-background-color);
+    padding: 0.5rem;
+    color: var(--heading-text-color);
+    
 }
 
 /* Class Selectors */
