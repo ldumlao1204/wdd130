@@ -95,7 +95,7 @@ h1 {
 }
 
 .history-section {
-  text-align: block;
+  text-align: center;
   
 }
 
@@ -107,7 +107,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; /* Left text, image, right text */
   gap: 1rem;
-  align-self: nowrap;
+  flex-wrap: nowrap;
   text-align: left;
 }
 
@@ -126,7 +126,6 @@ h1 {
 
 .gallery-section {
   text-align: center;
-  padding: 2rem;
 }
 
 .gallery-row {
@@ -137,12 +136,13 @@ h1 {
 }
 
 .gallery-row figure {
-  flex: 0 0 auto;
+  flex: auto;
   text-align: center;
 }
 
 .gallery-row img {
-  width: 130px;
+  
+  width: 140px;
   height: auto;
   display: block;
   }
