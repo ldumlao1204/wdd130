@@ -40,6 +40,7 @@ header {
     justify-content: start;
     padding: 1px;
     padding-bottom: 10px;
+    height: 140px;
     }
 
 nav ul {
@@ -50,11 +51,16 @@ nav ul {
     flex-direction: row;
     align-items: flex-end;
     padding: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--secondary-color);
 }
 
+header img {
+  height: auto;
+  margin-right: 30px;
+
+}
 main {
     max-width: 840px;
 }
@@ -68,8 +74,8 @@ h1, h2 {
 }
 
 nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+    margin: 12px;
+    padding: 5px;
 }
 
 .hero {
@@ -120,6 +126,7 @@ h1 {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid var(--secondary-color);
 }
 
 .gallery-section {
@@ -140,9 +147,10 @@ h1 {
 }
 
 .gallery-row img {
-  width: 140px;
+  width: 100px;
   height: auto;
   display: block;
+  border: 1px solid var(--secondary-color);
   }
 
 .gallery-row figcaption {
@@ -153,7 +161,7 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 140px;      /* Adjust vertical position as needed */
+    top: 160px;      /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
     background: var(--accent1-color); /* Soft white background for readability */
     color: var(--primary-color);
