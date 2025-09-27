@@ -83,7 +83,8 @@ h1, h2 {
     color: var(--secondary-color);
     text-align: center;
     padding: 8px;
-    background-color: var(--accent2-color);   
+    background-color: var(--accent2-color); 
+    width: 100%  
 }
 
 nav, p, section, article {
@@ -122,9 +123,8 @@ h1 {
 
 .history-content {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Left text, image, right text */
+  grid-template-columns: 1fr 1fr 1fr; /* Left text, image, right text */
   gap: 0.5rem;
-  flex-wrap: nowrap;
   text-align: left;
 }
 
@@ -132,11 +132,14 @@ h1 {
   padding: 2px;
 }
 
+.column.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .column.center img {
   width: 100%;  
-  max-width: 200%;
   height: auto;
-  display: block;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid var(--secondary-color);
@@ -163,7 +166,7 @@ h1 {
 }
 
 .gallery-row img {
-  width: 140px;
+  width: 100px;
   height: auto;
   display: block;
   border: 0.5rem;
