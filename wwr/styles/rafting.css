@@ -37,7 +37,6 @@ header {
     grid-template-columns: auto 1fr;
     grid-gap: 30px;
     align-items: center;
-    
     padding: 1px;
     padding-bottom: 10px;
   }
