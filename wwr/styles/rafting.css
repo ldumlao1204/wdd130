@@ -46,14 +46,28 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     justify-items: end;
     flex-direction: row;
     align-items: flex-end;
     padding: 8px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--secondary-color);
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--accent1-color); /* Dark blue border */
+  border-radius: 2px;
+  background-color: var(--primary-color); /* White background */
+  color: var(--accent1-color); /* Dark blue text */
+  text-decoration: none;
 }
 
 header img {
@@ -136,26 +150,29 @@ h1 {
 .gallery-row {
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   gap: 1rem;
   margin-top: 20px;
 }
 
 .gallery-row figure {
-  flex: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .gallery-row img {
-  width: 100px;
+  width: 140px;
   height: auto;
   display: block;
-  border: 1px solid var(--secondary-color);
+  border: 0.5rem;
   }
 
 .gallery-row figcaption {
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--secondary-color);
 } 
 
@@ -185,7 +202,8 @@ h1 {
 footer {
     display: flex;
     grid-template-columns: auto 1fr;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 30px;
     align-items: center;
     background-color: rgb(171, 185, 204);
     padding: 0.1rem;
