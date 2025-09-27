@@ -40,13 +40,12 @@ header {
     justify-content: start;
     padding: 1px;
     padding-bottom: 10px;
-    height: 140px;
-    }
+  }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     justify-items: end;
     flex-direction: row;
     align-items: flex-end;
