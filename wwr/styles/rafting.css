@@ -82,9 +82,7 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     text-align: center;
-    padding: 8px;
-    background-color: var(--accent2-color); 
-    width: 100%  
+       
 }
 
 nav, p, section, article {
@@ -126,6 +124,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr; /* Left text, image, right text */
   gap: 0.5rem;
   text-align: left;
+ 
 }
 
 .column {
@@ -149,6 +148,10 @@ h1 {
   text-align: center;
 }
 
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}  
 .gallery-row {
   display: flex;
   justify-content: center;
@@ -166,7 +169,7 @@ h1 {
 }
 
 .gallery-row img {
-  width: 100px;
+  width: 120px;
   height: auto;
   display: block;
   border: 0.5rem;
@@ -205,7 +208,7 @@ footer {
     display: flex;
     grid-template-columns: auto 1fr;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     background-color: rgb(171, 185, 204);
     padding: 0.1rem;
