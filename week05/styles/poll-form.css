@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 1.em;
+    font-family: Merriweather, Georgia, serif;
+    color: #130592;
+    background: #dddada;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    gap: 5px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+label[for="browser"] {
+    white-space: nowrap; 
+    font-size: 0.95rem;
+}  
+
+label[for="pet"] {
+    white-space: nowrap;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-right: 1rem; /* Adds space to the right */
+}
+
+button {
+    margin: 1rem auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem; 
+    padding: 0.5rem 1rem;
+    display: block
+    width: 200px;   
+}
+
+button:hover {
+    background-color: rgb(64, 219, 64);
+    cursor: pointer;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc; 
+    padding: 0.5rem;
+}
