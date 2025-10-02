@@ -4,16 +4,27 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
 body {
-    font-size: 1.em;
-    font-family: Merriweather, Georgia, serif;
+    font-size: 1em;
+    font-family: Reboto, Arial, sans-serif;
     color: #130592;
     background: #dddada;
+    margin: 1rem;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
 header {
     margin: 0 auto;
     width: 650px;
+    padding: 2px;
+    text-align: center;
 }
 
 h1 {
@@ -23,31 +34,44 @@ h1 {
     text-align: center;
 }
 form {
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 20px 40px;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
     background-color: #eee;
-    display: grid;
-    gap: 5px;
 }
 
 .form-item {
     display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
+
+.form-item.column1 label.textarea-label {
+    grid-column: 1 / -1; /* span both columns */
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-item.column1 textarea {
+    grid-column: 1 / -1; /* span both columns */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+ }
 
 .column1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    
+    grid-template-columns: 3fr 1fr;
 }
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
 }
 
 legend {
@@ -65,15 +89,6 @@ label {
     padding-right: 1rem;
 }
 
-label[for="browser"] {
-    white-space: nowrap; 
-    font-size: 0.95rem;
-}  
-
-label[for="pet"] {
-    white-space: nowrap;
-}
-
 input, select, textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
@@ -85,7 +100,7 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-input[type="text"], input[type="email"], select, textarea {
+input[type="text"], input[type="email"], select {
     padding: 0.5rem;
     font-size: 1.1rem;
     margin-right: 1rem; /* Adds space to the right */
@@ -99,7 +114,7 @@ button {
     border-radius: 0.3rem;
     font-size: 1.2rem; 
     padding: 0.5rem 1rem;
-    display: block
+    display: block;
     width: 200px;   
 }
 
