@@ -97,7 +97,7 @@ nav, p, section, article {
     padding: .5px;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -110,7 +110,7 @@ h1 {
 
 .history-section h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 10px;    
 }
 
 .history-content {
@@ -209,3 +209,157 @@ footer {
     color: var(--secondary-color);  
 }
 
+/* Contact Page Layout */
+.company-info {
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
+}
+
+.contact-details p {
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-flex {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+}
+
+.map-container {
+    flex: 1 1 0;
+    min-width: 400px;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    border-radius: 8px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 340px;
+    max-width: 350px;
+    min-height: 350px;
+    border-radius: 8px;
+    border: 0;
+    display: block;
+}
+
+.contact-form {
+    flex: 1 1 0;
+    max-width: 350px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 0;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start; /* aligns label to top of input/radio group */
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.form-row label {
+    min-width: 150px;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 500;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+
+
+.form-row.checkbox-row {
+    align-items: center;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 8px 0;
+    background: #eee;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.employee-profiles {
+    background: #f5f5f5;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.profiles figure {
+    margin: 0;
+    text-align: center;
+}
+
+.profiles img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #3872ae;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.socialmedia a img {
+    margin: 0 8px;
+    vertical-align: middle;
+}
