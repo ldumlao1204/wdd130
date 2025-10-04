@@ -2,7 +2,7 @@
     --primary-color: #ffffff; /* white */
     --secondary-color: #080e01; /*black*/
     --accent1-color: #0c107e; /* darkblue */
-    --accent2-color: #bea307; /* gold */
+    --accent2-color: #f3d73b; /* gold */
     --heading-font: "Roboto", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -37,9 +37,10 @@ header {
     grid-template-columns: auto 1fr;
     grid-gap: 30px;
     align-items: center;
-    padding: 1px;
-    padding-bottom: 10px;
-  }
+    padding: 0;
+    margin-top: 4px;    /* Space above header */
+    margin-bottom: 4px; /* Space below header */
+}    
 
 nav ul {
     list-style: none;
@@ -49,23 +50,29 @@ nav ul {
     font-size: 1rem;
     font-weight: 300;
     color: var(--secondary-color);
+    gap: 0;
 }
 
 nav ul li {
   margin: 0;
+  flex: 1 1 0;
+  text-align: center;
 }
 
 nav ul li a {
-  display: inline-block;
+  display: block;
   padding: 10px 16px;
   border: 1px solid var(--secondary-color); 
   background-color: var(--primary-color); /* White background */
   color: var(--secondary-color); /* black text */
   text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header img {
-  height: auto;
+  height: 150px;
+  width: auto;
   margin-right: 30px;
 
 }
@@ -110,7 +117,8 @@ nav, p, section, article {
 
 .history-section h2 {
   font-size: 2rem;
-  margin-bottom: 10px;    
+  margin-bottom: 10px; 
+  background-color: var(--accent2-color)  
 }
 
 .history-content {
@@ -135,6 +143,8 @@ nav, p, section, article {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
 }
 
 .gallery-section {
@@ -144,6 +154,7 @@ nav, p, section, article {
 .gallery-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  background-color: var(--accent2-color)  
 } 
 
 .gallery-row {
@@ -167,7 +178,9 @@ nav, p, section, article {
   height: auto;
   display: block;
   border: 0.5rem;
-  }
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
 
 .gallery-row figcaption {
   margin-top: 0.5rem;
@@ -177,7 +190,7 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    top: 160px;      /* Adjust vertical position as needed */
+    top: 250px;      /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
     background: var(--accent1-color); /* Soft white background for readability */
     color: var(--primary-color);
@@ -194,28 +207,13 @@ nav, p, section, article {
     width: 125px;
 }
 
-.socialmedia a {
-    text-decoration: none;
- }
-
-footer {
-    display: flex;
-    grid-template-columns: auto 1fr;
-    justify-content: flex-end;
-    gap: 70px;
-    align-items: center;
-    background-color: rgb(171, 185, 204);
-    padding: 0.1rem;
-    color: var(--secondary-color);  
-}
-
 /* Contact Page Layout */
 .company-info {
     padding: 24px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 24px;
     max-width: 800px;
-    margin: 0 auto 24px auto;
+    margin: 0 auto 10px auto;
 }
 
 .contact-details p {
@@ -241,7 +239,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 400px;
-    border-radius: 8px;
+    border-radius: 4px;
   }
 
   .map-container iframe {
@@ -250,7 +248,7 @@ footer {
     min-width: 400px;
     max-width: 400px;
     min-height: 400px;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 0;
     display: block;
 }
@@ -259,9 +257,9 @@ footer {
     flex: 1 1 0;
     max-width: 400px;
     background: #ebecec;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
     margin: 0;
 }
 
@@ -307,7 +305,6 @@ footer {
     flex-direction: column;
     align-items: stretch;
     font-size: 1rem;
-   
 }
 
 .radio-group {
@@ -326,13 +323,23 @@ footer {
 }
 
 .form-row.checkbox-row {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 10px;  
+}    
+
+.form-row.checkbox-row input[type="checkbox"] {
+    transform: scale(1.3); /* Makes the checkbox 30% bigger */
+    margin-right: 6px;     /* Optional: adds space between checkbox and label text */
+    margin-left: 4px;
 }
 
 .submit-btn {
     width: 100%;
     padding: 8px 0;
-    background: #9a9ba1;
+    background: rgb(171, 185, 204);
+    display: grid;
     border: 1px solid #bbb;
     border-radius: 4px;
     font-size: 1rem;
@@ -341,14 +348,14 @@ footer {
 }
 
 button:hover {
-    background-color: #3872ae;
+    background-color: var(--accent2-color);
     cursor: pointer;
 }
 
 .employee-profiles {
     background: #f5f5f5;
     padding: 24px;
-    border-radius: 8px;
+    border-radius: 4px;
     max-width: 800px;
     margin: 0 auto 24px auto;
     text-align: center;
@@ -370,18 +377,41 @@ button:hover {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    object-position: 80% 10%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+.socialmedia a {
+    text-decoration: none;
+    
+ }
+
+.socialmedia a img {
+    margin: 0 4px;
+    vertical-align: middle;
+    justify-content: space-around;
+    height: 32px;   /* Make social icons smaller */
+    width: 32px;
 }
 
 footer {
-    background: #3872ae;
-    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     text-align: center;
-    padding: 16px 0;
+    background-color: rgb(171, 185, 204);
+    margin-top: 16px;   /* Space above footer */
+    margin-bottom: 0;   /* Space below footer */
+    color: var(--secondary-color);
 }
 
-.socialmedia a img {
-    margin: 0 8px;
-    vertical-align: middle;
+footer p {
+    text-align: center;
+    margin-left: 20%;
+}
+
+footer .socialmedia {
+    justify-self: end;
+    
 }
