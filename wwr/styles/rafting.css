@@ -263,7 +263,9 @@ nav, p, section, article {
 
 .contact-details p {
     text-align: center;
-    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     padding: 0;
 }
 
@@ -323,7 +325,6 @@ nav, p, section, article {
     min-width: 100px;
     margin-bottom: 0;
     text-align: left;
-    
 }
 
 .form-row input[type="text"],
@@ -533,6 +534,7 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2;
+    margin-top: 1rem;
 }    
 
 .newsletter .form-group input {
@@ -659,10 +661,12 @@ button:hover {
 }
 
 .purpose-section p, .offerings-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 2rem;
+    line-height: 1.2;
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .purpose-image img {
@@ -741,7 +745,7 @@ button:hover {
 
 .offering p {
     color: var(--secondary-color);
-    line-height: 1.5;
+    line-height: 1.2;
     margin: 0;
 }
 
