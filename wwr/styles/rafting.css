@@ -114,6 +114,10 @@ h1, h2 {
     text-align: center;      
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 nav, p, section, article {
     margin: 12px;
     padding: 5px;
@@ -552,7 +556,6 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: inline-block;          
     text-decoration: none;
-    margin-left: calc(80px + 1rem); /* Align with input fields (label width + gap) */
 }
 
 .newsletter button:hover {
