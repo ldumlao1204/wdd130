@@ -831,7 +831,7 @@ button:hover {
 .featured-trips {
     padding: 2rem;
     max-width: 840px;        /* Match header width */
-    margin: 0 auto;          /* Center align */
+    margin: -1rem auto 0 auto; /* Move section up with negative top margin */
 }
 
 .featured-trips h2 {
