@@ -100,9 +100,10 @@ nav ul li a.active:hover {
 header img {
   height: 150px;
   width: auto;
+  margin-left: 70px;
   margin-right: 30px;
-
 }
+
 main {
     max-width: 840px;
 }
