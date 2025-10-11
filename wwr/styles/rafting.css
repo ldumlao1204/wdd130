@@ -424,12 +424,19 @@ button:hover {
 }
 
 .profiles img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 4px;
     object-position: 80% 10%;
     box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    margin-bottom: 1rem;
+}
+
+.profiles figcaption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 /* HOME PAGE SPECIFIC STYLES (index.html)   */
