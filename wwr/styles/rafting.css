@@ -519,7 +519,6 @@ button:hover {
     text-align: right;
     color: var(--secondary-color);
     font-weight: bold;
-    
 }
 
 .newsletter p {
@@ -541,7 +540,7 @@ button:hover {
 }
 
 .newsletter button {
-    padding: 1rem 4.5rem;          
+    padding: 1rem 2.5rem;          
     background: var(--accent2-color);
     color: var(--secondary-color);
     border: none;
