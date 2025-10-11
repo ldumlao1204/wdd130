@@ -83,6 +83,20 @@ nav ul li a {
   justify-content: space-evenly;
 }
 
+/* Active navigation link styling */
+nav ul li a.active {
+  background-color: var(--accent1-color); /* dark blue background */
+  color: var(--primary-color); /* white text */
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Hover effect for active links */
+nav ul li a.active:hover {
+  background-color: var(--accent2-color); /* gold background on hover */
+  color: var(--secondary-color); /* black text on hover */
+}
+
 header img {
   height: 150px;
   width: auto;
@@ -1023,13 +1037,11 @@ button:hover {
 
 .socialmedia a {
     text-decoration: none;
-    
- }
+}
 
 .socialmedia a img {
     margin: 0 4px;
     vertical-align: middle;
-    justify-content: space-around;
     height: 32px;   /* Make social icons smaller */
     width: 32px;
 }
