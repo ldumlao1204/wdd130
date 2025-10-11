@@ -540,7 +540,7 @@ button:hover {
 }
 
 .newsletter button {
-    padding: 1rem 2.5rem;          
+    padding: 1rem 2.5rem; /* Updated size same as cta button */          
     background: var(--accent2-color);
     color: var(--secondary-color);
     border: none;
