@@ -247,7 +247,7 @@ nav, p, section, article {
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 150px;
 }
 /* start at founded in 1990... */
 .hero article h2 {
@@ -257,6 +257,12 @@ nav, p, section, article {
     font-family: var(--heading-font);
     text-align: center;
     background: none;
+}
+
+.hero article p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--primary-color);
 }                       
     
 /* Contact Page Layout */
