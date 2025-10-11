@@ -1,0 +1,140 @@
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: white;
+    --aside-bg: #ffc0cb;
+    --aside-text: #333;
+    --border-color: #000;
+    --shadow-color: gray;
+    --nav-padding: 10px;
+    --nav-link-padding: 20px;
+    --img-width: 150px;
+    --aside-img-width: 200px;
+    --main-max-width: 840px;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    background-color: var(--heading-background-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a:hover {
+    background-color:#7a8a9f; 
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--heading-text-color);
+}
+
+h1 {
+    color: var(--heading-background-color);
+    padding: .5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+img {
+    width: var(--img-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: 3px;
+    box-shadow: 0 0 30px var(--shadow-color);
+}    
+
+main {
+    max-width: var(--main-max-width);
+    margin: auto;
+    width: 95%;
+    grid-column: 2;
+}
+
+main img{
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 1rem 1rem 0 1rem;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    padding: 1rem;
+    background-color: var(--aside-bg);
+    color: var(--aside-text);
+    text-align: left;
+    position: relative;
+    grid-row: 1;
+}
+
+aside img {
+    width: 280px;
+    height: auto;
+    display: center;
+}
+
+aside h2{
+    position:absolute;
+    top: 40px;
+    left: 105px;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 450px;
+}
+   
+footer {
+    margin-top: 15px;
+    border-top: 1px var(--border-color);
+    text-align: center;
+    background-color: var(--heading-background-color);
+    padding: 0.5rem;
+    color: var(--heading-text-color);
+    
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 2px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #eee;
+  color: #000;
+  list-style-position: inside;
+}
+
+.indent {
+    padding-left: 2rem;
+}
