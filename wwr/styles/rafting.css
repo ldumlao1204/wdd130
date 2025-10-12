@@ -1061,6 +1061,7 @@ nav, p, section, article {
 
 button:hover {
     background-color: var(--accent1-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
