@@ -154,7 +154,7 @@ nav, p, section, article {
 }
 
 .history-section h2 {
-  padding: 16px;
+  padding: 20px;
   font-size: 2rem;
   margin-bottom: 10px; 
   background-color: var(--accent2-color)  
@@ -203,7 +203,7 @@ nav, p, section, article {
   font-size: 2rem;
   margin-bottom: 10px;
   background-color: var(--accent2-color); 
-  padding: 16px; 
+  padding: 20px; 
 } 
 
 .gallery-row {
@@ -647,7 +647,6 @@ button:hover {
 /* PURPOSE SECTION-CSS GRID LAYOUT */
 
 .purpose-section {
-    
     max-width: 840px;
     margin: 0 auto;
     margin-bottom: 0;  
@@ -793,7 +792,7 @@ button:hover {
 }
 
 .trips-hero img {
-    width: 105%;
+    width: 120%;
     height: 100%;
     object-fit: cover;
 }
@@ -801,8 +800,8 @@ button:hover {
 .trips-hero .hero-content {
     position: absolute;
     top: 25%;
-    left: .40%;
-    right: .44%;        
+    left: .60%;
+    right: .100%;        
     transform: translateY(-50%);
     text-align: center;
     color: white;
@@ -841,7 +840,8 @@ button:hover {
     margin-bottom: 2rem;
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
-    padding: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .trip-details {
@@ -891,6 +891,7 @@ button:hover {
     background: var(--accent1-color);
     padding: 0.5rem;
     border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .trip-info {
@@ -943,6 +944,8 @@ button:hover {
     background: rgb(189, 203, 221);
     max-width: 840px;        /* Match header width */
     margin: 0 auto;          /* Center align */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .trips-table-section h2 {
@@ -953,6 +956,7 @@ button:hover {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
     padding: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .table-container {
@@ -966,16 +970,17 @@ button:hover {
     border-collapse: collapse;
     background: white;
     min-width: 700px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .trips-table th {
     background: var(--accent1-color);
     color: var(--primary-color);
-    padding: 0.8rem;
+    padding: 1rem;
     text-align: left;
     font-weight: bold;
     font-family: var(--heading-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .trips-table td {
@@ -1000,7 +1005,7 @@ button:hover {
 }
 
 .difficulty-intermediate {
-    background: #e8e81a;
+    background: #fdfd20;
     color: white;
     padding: 0.2rem 0.6rem;
     border-radius: 15px;
@@ -1028,6 +1033,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
     gap: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .info-card {
