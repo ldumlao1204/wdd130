@@ -102,207 +102,17 @@ nav ul li a.active:hover {
   background-color: var(--accent2-color); /* gold background on hover */
   color: var(--secondary-color); /* black text on hover */
 }
+/* End of Header */
 
-header img {
-  height: 150px;
-  width: auto;
-  margin-left: 70px;
-  margin-right: 30px;
-}
-
-main {
-    max-width: 840px;
-}
-    
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-    text-align: center;      
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-nav, p, section, article {
-    margin: 12px;
-    padding: 5px;
-}
-
-.hero {
-    position: relative;
-    width: 100vw;
-    height: 700px;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    object-position: center;
-}
-
-.hero h1 {
-    position: absolute;
-    font-size: 3rem; 
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #ffffff; /* white text - make sure there is enough contrast with the background-color */
-}
-
-.history-section h2 {
-  padding: 10px;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  background-color: var(--accent2-color);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
-
-.history-section {
-  max-width: 840px;
-  margin: 1rem auto 0 auto;
-  width: 100%;
-}
-
-.history-content {
-  display: grid;
-  grid-template-columns: 1fr 400px 1fr; /* Equal wide columns on sides */
-  gap: 0.5rem;
-  align-items: start;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(60% - 50vw);
-  padding: 0 5rem;
-  box-sizing: border-box;
-  
-}
-
-.column {
-  padding: 1rem;
-}
-
-.column.left {
-  text-align: left;
-  padding-right: 2rem;
-  margin: 5px;
-}
-
-.column.right {
-  text-align: left;
-  padding-left: 2rem;
-  margin: 5px;
-}
-
-.column p {
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  text-align: left;
-  font-family: var(--body-font);
-  word-spacing: 0.1em;
-  letter-spacing: 0.02em;
-}
-
-.column.center {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1rem 0;
-}
-.column.center img {
-  width: 300px;  
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
-}
-
-.gallery-section {
-  text-align: center;
-  max-width: 840px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.gallery-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  background-color: var(--accent2-color);
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-} 
-
-.gallery-row {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 30px auto 20px auto;
-  max-width: 840px;
-  width: 100%;
-}
-
-.gallery-row figure {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-
-.gallery-row img {
-  width: 300px;
-  height: auto;
-  display: block;
-  border: 0.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
-}
-
-.gallery-row figcaption {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: var(--secondary-color);
-  font-weight: bold;
-} 
-
-.hero article {
-    position: absolute;
-    top: 450px;     /* Adjust vertical position as needed */
-    right: 20px;      /* Adjust horizontal position as needed */
-    left: 20px;       /* Add left margin to move away from edge */
-    background: var(--accent1-color); /* Soft white background for readability */
-    color: var(--primary-color);
-    opacity: 0.7;
-    padding: 10px 10px 10px 20px;
-    border-radius: 0px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.15);
-    z-index: 1;
-    max-width: none;
-}
-
+/*------------------------------------------*/
+/* Home Page - My Index.html */
 .hero article img {
     float: right;
     width: 170px;
 }
 /* start at founded in 1990... */
 .hero article h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--primary-color);  /* white color */
     margin-bottom: 0.5rem;
     font-family: var(--heading-font);
@@ -311,7 +121,7 @@ nav, p, section, article {
 }
 
 .hero article p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     color: var(--primary-color);
 }                       
@@ -357,7 +167,7 @@ nav, p, section, article {
 }
 
 .home-hero .hero-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
@@ -369,6 +179,7 @@ nav, p, section, article {
     color: white;
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    font-style: italic;
 }
 
 /* NEWSLETTER SECTION */
@@ -404,7 +215,6 @@ nav, p, section, article {
     gap: 5px;
     align-items: center;
     margin: 0;
- 
     justify-content: flex-start;
 }
 
@@ -417,10 +227,10 @@ nav, p, section, article {
 }
 
 .newsletter p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 2rem;
-    max-width: 600px;
+    max-width: auto;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2;
@@ -432,7 +242,7 @@ nav, p, section, article {
     padding: 0.75rem;
     border: 0.1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .newsletter-name, .newsletter-email {
@@ -448,7 +258,7 @@ nav, p, section, article {
     border-radius: 4px;             
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.2rem;              
+    font-size: 1.3rem;              
     transition: all 0.3s ease;      
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: inline-block;          
@@ -482,10 +292,10 @@ nav, p, section, article {
 }
 
 .cta p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 2rem;
-    max-width: 600px;
+    max-width: auto;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2;
@@ -499,7 +309,7 @@ nav, p, section, article {
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     font-family: var(--heading-font);
@@ -515,7 +325,7 @@ nav, p, section, article {
 /* PURPOSE SECTION-CSS GRID LAYOUT */
 
 .purpose-section {
-    max-width: 840px;
+    max-width: auto;
     margin: 0 auto;
     margin-bottom: 0;  
 }
@@ -539,7 +349,7 @@ nav, p, section, article {
 }
 
 .purpose-text {
-    flex: 1.5;
+    flex: 2rem;
     padding: 5px;
     margin-right: 0.5rem;
     text-align: left;
@@ -557,11 +367,11 @@ nav, p, section, article {
 }
 
 .purpose-section p, .offerings-section p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.2;
     color: var(--secondary-color);
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .purpose-image img {
@@ -584,7 +394,7 @@ nav, p, section, article {
     flex-direction: column;
     max-width: 1200px;              /* Add max-width to section */
     margin: 0 auto;  
-    margin-top: 2rem; /* Increased from -1rem to 3rem to move section lower */
+
 }
 
 .offerings-section h2 {
@@ -645,12 +455,210 @@ nav, p, section, article {
     margin: 0;
 }
 
-/* End of home page styles */
+/* End of HOME page styles */
 
+
+/* ABOUT US PAGE */
+.hero article {
+    position: absolute;
+    top: 450px;     
+    right: 20px;     
+    left: 20px;       
+    background: var(--accent1-color); 
+    color: var(--primary-color);
+    opacity: 0.7;
+    padding: 10px 10px 10px 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    z-index: 1;
+    max-width: none;
+}
+
+
+header img {
+  height: 150px;
+  width: auto;
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+main {
+    max-width: 840px;
+}
+    
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: center;      
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+nav, p, section, article {
+    margin: 12px;
+    padding: 5px;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.hero h1 {
+    position: absolute;
+    font-size: 5rem; 
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #ffffff; /* white text - make sure there is enough contrast with the background-color */
+}
+
+.history-section h2 {
+  padding: 10px;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: var(--accent2-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.history-section {
+  max-width: 840px;
+  margin: auto;
+  width: 100%;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr; /* Equal wide columns on sides */
+  gap: 1rem;
+  align-items: start;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(60% - 50vw);
+  padding: 0 5rem;
+  box-sizing: border-box;
+}
+
+.column {
+  padding: 2rem;
+}
+
+.column.left {
+  text-align: left;
+  padding-right: 3rem;
+  margin:-5px;
+}
+.column.right  {
+  text-align: left;
+  padding-right: 3rem;
+  margin: 5px;
+}
+
+.column p {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: left;
+  font-family: var(--body-font);
+  word-spacing: 0.2em;
+  letter-spacing: 0.02em;
+}
+
+.column.center {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.column.center img {
+  width: 500px;  
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+.gallery-section {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery-section h2 {   /* Adventure Awaits You */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background-color: var(--accent2-color);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+} 
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 30px auto 20px auto;
+  max-width: 840px;
+  width: 100%;
+}
+
+.gallery-row figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery-row img {
+  width: 350px;
+  height: auto;
+  display: block;
+  border: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+
+.gallery-row figcaption {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+} 
+/* End - About us */
+
+/*------------------------------------------*/
 
 /* TRIPS PAGE STYLES */
 
 /* Trips Hero Section */
+
 .trips-hero {
     position: relative;
     width: 100vw;
@@ -683,11 +691,10 @@ nav, p, section, article {
 }
 .trips-hero .hero-content h1 {
     color: var(--primary-color);      /* White text */
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     font-family: var(--heading-font);
- 
 }
 
 .trips-hero .hero-content p {
@@ -697,22 +704,21 @@ nav, p, section, article {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
-
 /* Featured Trips Section */
 .featured-trips {
-    padding: 2rem;
-    max-width: 840px;        /* Match header width */
+    padding: 3rem;
+    max-width: 1200px;        /* Increased from 840px */
     margin: -1rem auto 0 auto; /* Move section up with negative top margin */
 }
 
 .featured-trips h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
@@ -756,12 +762,12 @@ nav, p, section, article {
 }
 
 .trip-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-family: var(--heading-font);
     background: var(--accent1-color);
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 4px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
@@ -783,10 +789,10 @@ nav, p, section, article {
 }
 
 .trip-content p {
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 1rem;
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .trip-highlights {
@@ -795,11 +801,11 @@ nav, p, section, article {
 }
 
 .trip-highlights li {
-    padding: 0.2rem 0;
+    padding: 0.3rem 0;
     position: relative;
     padding-left: 1.2rem;
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .trip-highlights li::before {
@@ -812,10 +818,11 @@ nav, p, section, article {
 
 /* Trips Table Section */
 .trips-table-section {
-    padding: 2rem;
+    padding: 3rem;
     background: #ebecec;
-    max-width: 840px;        /* Match header width */
-    margin: 0 auto;          /* Center align */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
@@ -832,34 +839,38 @@ nav, p, section, article {
 }
 
 .table-container {
-    overflow-x: auto;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 200%;
+    margin: 0 auto;
 }
 
 .trips-table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    min-width: 700px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    table-layout: auto;
+    margin: 0 auto;
 }
 
 .trips-table th {
     background: var(--accent1-color);
     color: var(--primary-color);
-    padding: 1rem;
+    padding: 1.5rem 0.5rem;
     text-align: left;
     font-weight: bold;
     font-family: var(--heading-font);
     font-size: 1rem;
+    white-space: nowrap;
 }
 
 .trips-table td {
-    padding: 0.8rem;
+    padding: 1.2rem 0.5rem;
     border-bottom: 1px solid #eee;
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    text-align: left;
 }
 
 .trips-table tr:hover {
@@ -896,33 +907,34 @@ nav, p, section, article {
 
 /* Trip Information Section */
 .trip-info-section {
-    padding: 2rem;
-    max-width: 840px;  /* Match header width */
+    padding: 3rem;
+    max-width: 1200px;  /* Match header width */
     margin: 0 auto;          
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
-    gap: 1rem;
+    gap: 1.5rem;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .info-card {
     background: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .info-card h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-family: var(--heading-font);
     background: var(--accent1-color);
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 4px;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .info-card ul {
@@ -934,7 +946,7 @@ nav, p, section, article {
     padding: 0.4rem 0;
     border-bottom: 1px solid #eee;
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .info-card li:last-child {
