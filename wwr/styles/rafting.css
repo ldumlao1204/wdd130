@@ -231,7 +231,7 @@ nav ul li a.active:hover {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 2rem;
-    max-width: auto;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2;
@@ -296,7 +296,7 @@ nav ul li a.active:hover {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 2rem;
-    max-width: auto;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2;
@@ -326,7 +326,7 @@ nav ul li a.active:hover {
 /* PURPOSE SECTION-CSS GRID LAYOUT */
 
 .purpose-section {
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 0;  
 }
