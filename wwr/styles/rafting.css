@@ -131,14 +131,20 @@ nav, p, section, article {
 
 .hero {
     position: relative;
-    margin-top: 20px;  
+    width: 100vw;
+    height: 700px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
+    margin-top: 20px;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
-    padding: .5px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
 }
 
 .hero h1 {
@@ -254,12 +260,13 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    top: 250px;     /* Adjust vertical position as needed */
+    top: 350px;     /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
+    width: 100%;
     background: var(--accent1-color); /* Soft white background for readability */
     color: var(--primary-color);
     opacity: 0.7;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
     border-radius: 0px;
     box-shadow: 0 0 30px rgba(0,0,0,0.15);
     z-index: 1;
@@ -624,17 +631,19 @@ nav, p, section, article {
 .trips-hero {
     position: relative;
     width: 100vw;
-    max-width: 840px;        /* Match header width */
-    height: 400px;
+    height: 700px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     overflow: hidden;
-    margin: 20px auto 0 auto; /* Add top margin for fixed header spacing */
-    
+    margin-top: 20px;
 }
 
 .trips-hero img {
-    width: 120%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    object-position: center;
 }
 
 .trips-hero .hero-content {
