@@ -252,7 +252,7 @@ nav ul li a.active:hover {
 }
 
 .newsletter button {
-    padding: 1rem 1rem;       
+    padding: 1rem 1.5rem;       
     background: var(--accent2-color);
     color: var(--secondary-color);
     border: none;
@@ -306,7 +306,7 @@ nav ul li a.active:hover {
     display: inline-block;
     background: var(--accent2-color);
     color: var(--secondary-color);
-    padding: 1rem 4.5rem;
+    padding: 1rem 3.5rem;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
