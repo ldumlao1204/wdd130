@@ -1110,6 +1110,10 @@ button:hover {
     text-decoration: none;
 }
 
+.socialmedia a:hover {
+    background-color: transparent;
+}
+
 .socialmedia a img {
     margin: 0 4px;
     vertical-align: middle;
