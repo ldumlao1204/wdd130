@@ -239,7 +239,7 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    top: 250px;      /* Adjust vertical position as needed */
+    top: 250px;     /* Adjust vertical position as needed */
     left: 0px;      /* Adjust horizontal position as needed */
     background: var(--accent1-color); /* Soft white background for readability */
     color: var(--primary-color);
@@ -258,7 +258,7 @@ nav, p, section, article {
 /* start at founded in 1990... */
 .hero article h2 {
     font-size: 1.5rem;
-    color: var(--primary-color);        /* white color */
+    color: var(--primary-color);  /* white color */
     margin-bottom: 0.5rem;
     font-family: var(--heading-font);
     text-align: center;
@@ -1000,7 +1000,7 @@ button:hover {
 }
 
 .difficulty-intermediate {
-    background: #FF9800;
+    background: #e8e81a;
     color: white;
     padding: 0.2rem 0.6rem;
     border-radius: 15px;
@@ -1020,8 +1020,8 @@ button:hover {
 /* Trip Information Section */
 .trip-info-section {
     padding: 2rem;
-    max-width: 840px;        /* Match header width */
-    margin: 0 auto;          /* Center align */
+    max-width: 840px;  /* Match header width */
+    margin: 0 auto;          
 }
 
 .info-grid {
@@ -1087,7 +1087,7 @@ footer {
     margin-top: 16px;   /* Space above footer */
     margin-bottom: 0;   /* Space below footer */
     color: var(--secondary-color);          
-    padding: 0.20rem 2rem;             /* Add padding for content spacing */
+    padding: 0.20rem 2rem;   /* Add padding for content spacing */
     box-sizing: border-box;
 }
 
