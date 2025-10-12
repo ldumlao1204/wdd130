@@ -899,7 +899,7 @@ nav, p, section, article {
 }
 
 .difficulty-expert {
-    background: #F44336;
+    background: var(--background);
     color: white;
     padding: 0.2rem 0.6rem;
     border-radius: 15px;
