@@ -157,7 +157,8 @@ nav, p, section, article {
   padding: 20px;
   font-size: 2rem;
   margin-bottom: 10px; 
-  background-color: var(--accent2-color)  
+  background-color: var(--accent2-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
 }
 
 .history-content {
@@ -203,15 +204,16 @@ nav, p, section, article {
   font-size: 2rem;
   margin-bottom: 10px;
   background-color: var(--accent2-color); 
-  padding: 20px; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 } 
 
 .gallery-row {
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
-  gap: 0.5rem;
-  margin-top: 20px;
+  gap: 1.5rem;
+  margin: 30px auto 20px auto;
+  max-width: 1200px;
 }
 
 .gallery-row figure {
@@ -222,7 +224,7 @@ nav, p, section, article {
 }
 
 .gallery-row img {
-  width: 150px;
+  width: 200px;
   height: auto;
   display: block;
   border: 0.5rem;
@@ -574,7 +576,7 @@ button:hover {
 }
 
 .newsletter button {
-    padding: 1rem 2.5rem; /* Shorter button length */          
+    padding: 1rem 4.5rem; /* Shorter button length */          
     background: var(--accent2-color);
     color: var(--secondary-color);
     border: none;
@@ -659,6 +661,7 @@ button:hover {
     text-align: center;
     font-family: var(--heading-font);
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .purpose-grid {
@@ -725,6 +728,7 @@ button:hover {
     background-color: var(--accent2-color);
     font-family: var(--heading-font);
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .offerings-grid {
