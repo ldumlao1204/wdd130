@@ -154,11 +154,17 @@ nav, p, section, article {
 }
 
 .history-section h2 {
-  padding: 20px;
+  padding: 10px;
   font-size: 2rem;
   margin-bottom: 10px; 
   background-color: var(--accent2-color);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+}
+
+.history-section {
+  max-width: 840px;
+  margin: 1rem auto 0 auto;
+  width: 100%;
 }
 
 .history-content {
@@ -166,6 +172,9 @@ nav, p, section, article {
   grid-template-columns: 1fr 1fr 1fr; /* Left text, image, right text */
   gap: 0.5rem;
   text-align: left;
+  max-width: 840px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .column {
@@ -198,13 +207,16 @@ nav, p, section, article {
 
 .gallery-section {
   text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .gallery-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
   background-color: var(--accent2-color); 
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 } 
 
@@ -213,7 +225,8 @@ nav, p, section, article {
   justify-content: center;
   gap: 1.5rem;
   margin: 30px auto 20px auto;
-  max-width: 1200px;
+  max-width: 840px;
+  width: 100%;
 }
 
 .gallery-row figure {
@@ -535,7 +548,7 @@ button:hover {
 }
 
 .newsletter form {
-    max-width: 450px;
+    max-width: 300px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -546,7 +559,7 @@ button:hover {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .newsletter .form-group label {
@@ -576,7 +589,7 @@ button:hover {
 }
 
 .newsletter button {
-    padding: 1rem 4.5rem; /* Shorter button length */          
+    padding: 1rem 1rem !important; /* Force smaller width */          
     background: var(--accent2-color);
     color: var(--secondary-color);
     border: none;
@@ -588,6 +601,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: inline-block;          
     text-decoration: none;
+    font-family: var(--heading-font);
 }
 
 .newsletter button:hover {
